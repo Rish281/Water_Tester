@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="water">
+        <h1>Water Quality Checker</h1>
+        
+        <div class="container">
+            <div class="value">
+                <h2>TDS (Total Dissolved Solids) ppm:</h2>
+                <div id="tdsChartContainer" class="chart-container"></div>
+                <input type="number" class="inputs" id="tds" required>
+            </div>
+            
+            <div class="value">
+                <h2>pH Value:</h2>
+                <div id="phChartContainer" class="chart-container"></div>
+                <input type="number" class="inputs" id="ph" step="0.1" required>
+            </div>
+        </div>
+        <div class="container">
+            <div class="value">
+                <h2>EC (Electrical Conductivity) µS/cm:</h2>
+                <div id="ecChartContainer" class="chart-container"></div>
+                <input type="number" class="inputs" id="ec" required>
+            </div>
+
+            <div class="value">
+                <h2>Hardness:</h2>
+                <div id="chlorineChartContainer" class="chart-container"></div>
+                <input type="number" class="inputs" id="chlorine" required>
+            </div>
+        </div>
+        <!-- <div class="container">
+            <div class="value">
+                <h2>Bacteria Level:</h2>
+                <div id="bacteriaChartContainer" class="chart-container"></div>
+                <input type="number" class="inputs" id="bacteria" required>
+            </div>
+        </div>
+        <div class="container">
+            <div class="value">
+                <h2>Colorimeter:</h2>
+                <div id="colorimeterChartContainer" class="chart-container"></div>
+                <input type="number" class="inputs" id="colorimeter" required>
+            </div>
+        </div> -->
+        
+        <button onclick="checkQuality()" class="check">CHECK</button>
+        
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+        <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
