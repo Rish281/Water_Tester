@@ -110,16 +110,29 @@
     }
 
     function checkChlorineLevel(chlorineValue) {
-        const lowChlorine = 75;
-        const mediumChlorine = 150;
-        const highChlorine = 300;
+        const poorMinHardness = 0;
+        const poorMaxHardness = 75;
+        const averageLowMinHardness = 76;
+        const averageLowMaxHardness = 150;
+        const goodMinHardness = 151;
+        const goodMaxHardness = 300;
+        const goodHighMinHardness = 301;
+        const goodHighMaxHardness = 450;
+        const averageHighMinHardness = 451;
+        const averageHighMaxHardness = 600;
 
-        if (chlorineValue <= lowChlorine) {
-            return 'Low';
-        } else if (chlorineValue <= mediumChlorine) {
-            return 'Medium';
-        } else {
-            return 'High';
+        if (hardnessValue >= poorMinHardness && hardnessValue <= poorMaxHardness) {
+            return 'Poor';
+        } else if (hardnessValue >= averageLowMinHardness && hardnessValue <= averageLowMaxHardness) {
+        return 'Average';
+        } else if (hardnessValue >= goodMinHardness && hardnessValue <= goodMaxHardness) {
+            return 'Good';
+        } else if (hardnessValue >= goodHighMinHardness && hardnessValue <= goodHighMaxHardness) {
+            return 'Good';
+        } else if (hardnessValue >= averageHighMinHardness && hardnessValue <= averageHighMaxHardness) {
+            return 'Average';
+        } else  {
+            return 'Poor'
         }
     }
 
