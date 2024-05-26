@@ -110,9 +110,9 @@
     }
 
     function checkChlorineLevel(chlorineValue) {
-        const lowChlorine = 0;
-        const mediumChlorine = 1.5;
-        const highChlorine = 3;
+        const lowChlorine = 75;
+        const mediumChlorine = 150;
+        const highChlorine = 300;
 
         if (chlorineValue <= lowChlorine) {
             return 'Low';
