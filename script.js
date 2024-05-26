@@ -110,29 +110,29 @@
     }
 
     function checkChlorineLevel(chlorineValue) {
-        const poorMinHardness = 0;
-        const poorMaxHardness = 75;
-        const averageLowMinHardness = 76;
-        const averageLowMaxHardness = 150;
-        const goodMinHardness = 151;
-        const goodMaxHardness = 300;
-        const goodHighMinHardness = 301;
-        const goodHighMaxHardness = 450;
-        const averageHighMinHardness = 451;
-        const averageHighMaxHardness = 600;
+        const poorMinChlorine = 0;
+        const poorMaxChlorine = 75;
+        const averageLowMinChlorine = 76;
+        const averageLowMaxChlorine = 150;
+        const goodMinChlorine = 151;
+        const goodMaxChlorine = 300;
+        const goodHighMinChlorine = 301;
+        const goodHighMaxChlorine = 450;
+        const averageHighMinChlorine = 451;
+        const averageHighMaxChlorine = 600;
 
-        if (hardnessValue >= poorMinHardness && hardnessValue <= poorMaxHardness) {
+        if (chlorineValue >= poorMinChlorine && chlorineValue <= poorMaxChlorine) {
             return 'Poor';
-        } else if (hardnessValue >= averageLowMinHardness && hardnessValue <= averageLowMaxHardness) {
-        return 'Average';
-        } else if (hardnessValue >= goodMinHardness && hardnessValue <= goodMaxHardness) {
-            return 'Good';
-        } else if (hardnessValue >= goodHighMinHardness && hardnessValue <= goodHighMaxHardness) {
-            return 'Good';
-        } else if (hardnessValue >= averageHighMinHardness && hardnessValue <= averageHighMaxHardness) {
+        } else if (chlorineValue >= averageLowMinChlorine && chlorineValue <= averageLowMaxChlorine) {
             return 'Average';
-        } else  {
-            return 'Poor'
+        } else if (chlorineValue >= goodMinChlorine && chlorineValue <= goodMaxChlorine) {
+            return 'Good';
+        } else if (chlorineValue >= goodHighMinChlorine && chlorineValue <= goodHighMaxChlorine) {
+            return 'Good';
+        } else if (chlorineValue >= averageHighMinChlorine && chlorineValue <= averageHighMaxChlorine) {
+            return 'Average';
+        } else {
+            return 'Poor';
         }
     }
 
