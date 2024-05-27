@@ -84,15 +84,15 @@
         const poorMinEC = 100;
         const poorMaxEC = 500;
         const averageLowMinEC = 501;
-        const averageLowMaxEC = 1000;
-        const goodMinEC = 1001;
-        const goodMaxEC = 2000;
-        const goodHighMinEC = 2001;
-        const goodHighMaxEC = 3000;
-        const averageHighMinEC = 3001;
-        const averageHighMaxEC = 4000;
-        const poorHighMinEC = 4001;
-        const poorHighMaxEC = 5000;
+        const averageLowMaxEC = 750;
+        const goodMinEC = 751;
+        const goodMaxEC =1000 ;
+        const goodHighMinEC = 1250;
+        const goodHighMaxEC = 1500;
+        const averageHighMinEC = 1701;
+        const averageHighMaxEC = 2000;
+        const poorHighMinEC = 2501;
+        const poorHighMaxEC = 3000;
 
         if (ecValue >= poorMinEC && ecValue <= poorMaxEC) {
             return 'Poor';
